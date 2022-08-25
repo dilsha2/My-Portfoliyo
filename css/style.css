@@ -46,3 +46,12 @@ nav ul li a:hover{
     color: #212121;
     margin-bottom: 20px;
 }
+
+span{
+    color: orange;
+}
+
+.detel p{
+    color: #555;
+    line-height: 25px;
+}
