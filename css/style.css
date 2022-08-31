@@ -371,7 +371,24 @@ header .navbar ul li a:hover{
 }
 
 
+.social_link{
 
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+
+}
+.social_link a{
+    padding: 5px;
+}
+.social_link img:hover{
+    transform: scale(1.2);
+}
+.icons {
+    width: 35px;
+    height: 35px;
+
+}
 
 
 
