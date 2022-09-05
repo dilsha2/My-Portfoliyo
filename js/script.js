@@ -24,14 +24,4 @@ $(document).ready(function () {
         loop:true
     });
 
-
-    var typed = new Typed(".typing_about",{
-        strings:["Full Stack Developer","WEB-DEVELOPER","BACK-END DEVELOPER","FRONT-END DEVELOPER","SOFTWARE DESIGNER","UI/UX DESIGNER"],
-        typeSpeed:80,
-        backSpeed:50,
-        loop:true
-    });
-
-
-
 });
