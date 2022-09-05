@@ -188,6 +188,8 @@ header .navbar ul li a:hover{
     text-align: center;
 }
 
+/*========================================================================================*/
+
 .about .row{
     display: flex;
     align-items: center;
@@ -267,6 +269,8 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
+/*========================================================================================*/
+
 .education .box-container{
     display: flex;
     align-items: center;
@@ -317,6 +321,7 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+/*========================================================================================*/
 
 /*.skills\&tools h1 {*/
 /*    font-size: 5rem;*/
@@ -354,6 +359,8 @@ header .navbar ul li a:hover{
     transform: scale(1.2);
 }
 
+/*========================================================================================*/
+
 .assignments .box-container{
     display: flex;
     align-items: center;
@@ -380,6 +387,8 @@ header .navbar ul li a:hover{
 .assignments .box-container .box:hover img{
     transform: scale(1.2);
 }
+
+/*========================================================================================*/
 
 .skills\&tools .box-container{
     display: flex;
@@ -452,6 +461,7 @@ header .navbar ul li a:hover{
     background:var(--yellow);
 }
 
+/*========================================================================================*/
 
 .contact .row{
     display: flex;
@@ -520,6 +530,7 @@ header .navbar ul li a:hover{
     display: none;
 }
 
+/*========================================================================================*/
 
 .social_link{
 
@@ -531,16 +542,34 @@ header .navbar ul li a:hover{
 .social_link a{
     padding: 5px;
 }
+
 .social_link img:hover{
     transform: scale(1.2);
 }
+
 .icons {
     width: 35px;
     height: 35px;
 
 }
 
+/*========================================================================================*/
 
+#footer_of_site{
+    margin-top: 13.3vh;
+    height: 10vh;
+    background: rgba(0, 0, 0, 0.82);
+    border-top: 3px solid #dcb41c;
+}
+
+#footer_of_site>p{
+    color: white;
+    font-family: 'poppins', sans-serif ;
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 5px;
+}
 
 
 
