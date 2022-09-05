@@ -2,62 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Transition Case 2 | IJSE</title>
-    <meta content="width=device-width initial-scale=1" name="viewport">
-    <link href="assets/img/fav.png" rel="icon">
-    <link href="css/normalize.css" rel="stylesheet">
+    <title>Transition Case 02</title>
+    <link href="/assignments/CSS/transition/case_02/css/normalize.css" rel="stylesheet">
+
     <style>
-        body{
-            background-color: #962ce2;
+        section{
+            width: 100vw;
+            height: 100vh;
+            background-color: dodgerblue;
         }
-        div{
-            width: 300px;
-            height: 300px;
-            background-color: gray;
+
+        section>div{
             position: absolute;
+            margin: auto;
             left: 0;
             right: 0;
             top: 0;
             bottom: 0;
-            margin: auto;
+            width: 400px;
+            height: 400px;
             border-radius: 100%;
-            border: 15px solid white;
-            border-top: 15px solid crimson;
-            cursor: pointer;
+            background-color: limegreen;
+
         }
-        div>h1{
+
+        section>div::before {
+            content: " ";
             position: absolute;
-            left: 0;
-            right: 0;
             top: 0;
             bottom: 0;
-            margin: auto;
-            width: max-content;
-            height: max-content;
-            color: white;
-            font-family: Ubuntu;
+            left: 0;
+            right: 0;
+            border: 20px solid #4a5a74;
+            border-top: 20px solid #ff0000;
+            border-radius: 100%;
         }
-
-        div:hover{
+        section>div:hover::before{
+            cursor: pointer;
             transform: rotate(360deg);
-            /*  transition-property: all;
-              transition-duration: 2s;*/
-            transition: all 2s;
+            transition: all 1s;
         }
 
-        div:hover>h1{
-            transform: rotate(-360deg);
-            transition: all 2s;
+        section>div>h1{
+            position: relative;
+            color: white;
+            text-align: center;
+            top: 160px;
         }
-
 
     </style>
+
 </head>
 <body>
 
-<div>
-    <h1>RWAD</h1>
-</div>
+<section>
+
+    <div>
+        <h1>RWAD</h1>
+    </div>
+
+</section>
+
 
 </body>
 </html>
