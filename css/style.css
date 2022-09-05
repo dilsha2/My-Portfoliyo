@@ -251,8 +251,8 @@ header .navbar ul li a:hover{
 }
 
 .about  .box-container .box{
-    height: 40rem;
-    width:35rem;
+    height: 50rem;
+    width:45rem;
     border-radius: 1rem;
     margin:2rem;
     overflow: hidden;
