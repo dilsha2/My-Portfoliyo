@@ -174,17 +174,19 @@ header .navbar ul li a:hover{
     color:#eee;
     padding: 1rem 0;
 }
-
-/*.home .home-content .text-3 {*/
-/*    font-size: 40px;*/
-/*    margin: 20px 0;*/
-/*    text-align: center;*/
-/*}*/
-/*.home .home-content .text-3 span {*/
-/*    color: yellow;*/
-/*    font-weight: 500;*/
-/*    text-align: center;*/
-/*}*/
+.home .home-content {
+    color: #eee;
+}
+.home .home-content .text-3 {
+    font-size: 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+.home .home-content .text-3 span {
+    color: yellow;
+    font-weight: 500;
+    text-align: center;
+}
 
 .about .row{
     display: flex;
