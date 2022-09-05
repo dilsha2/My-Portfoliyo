@@ -237,7 +237,7 @@ header .navbar ul li a:hover{
     color:#fff;
 }
 
-.about .row .box-container {
+.about .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -246,7 +246,7 @@ header .navbar ul li a:hover{
     padding-left: 3rem;
 }
 
-.about .row .box-container .box{
+.about  .box-container .box{
     height: 40rem;
     width:35rem;
     border-radius: 1rem;
@@ -255,13 +255,13 @@ header .navbar ul li a:hover{
     cursor: pointer;
 }
 
-.about  .row .box-container .box img{
+.about  .box-container .box img{
     height:100%;
     width:100%;
     object-fit: cover;
 }
 
-.about .row .box-container .box:hover img{
+.about .box-container .box:hover img{
     transform: scale(1.2);
 }
 
