@@ -389,34 +389,6 @@ header .navbar ul li a:hover{
 }
 
 /*========================================================================================*/
-
-.skills\&tools .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-.skills\&tools .box-container .box{
-    height: 10rem;
-    width: 15rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.skills\&tools .box-container .box img{
-    height: 100%;
-    width: 70%;
-    object-fit: cover;
-}
-
-.skills\&tools .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
 .skills\&tools .see{
     display: flex;
     align-items: center;
@@ -460,6 +432,34 @@ header .navbar ul li a:hover{
     color:#fff;
     background:var(--yellow);
 }
+
+.skills\&tools .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.skills\&tools .box-container .box{
+    height: 10rem;
+    width: 15rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.skills\&tools .box-container .box img{
+    height: 100%;
+    width: 70%;
+    object-fit: cover;
+}
+
+.skills\&tools .box-container .box:hover img{
+    transform: scale(1.2);
+}
+
 
 /*========================================================================================*/
 
