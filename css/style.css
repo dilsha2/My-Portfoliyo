@@ -332,43 +332,117 @@ header .navbar ul li a:hover{
 /*    color:var(--yellow);*/
 /*}*/
 
-.projects .box-container{
+.projects .top{
+    position: fixed;
+    bottom:7.5rem; right: 2rem;
+    z-index: 100;
+    display: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:2rem 0;
 }
 
-.projects  .box-container .box{
-    height: 20rem;
-    width:26rem;
-    border-radius: 1rem;
-    margin:2rem;
-    overflow: hidden;
-    cursor: pointer;
+/* global */
+img {
+    width: 100%;
+    height: 60%;
 }
 
-.projects  .box-container .box img{
-    height:100%;
-    width:100%;
-    object-fit: cover;
-}
-
-.projects .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
-.projects .box-container  h3{
-    font-size: 2rem;
+.projects h3 {
+    margin: 0.5rem 0;
     color:#fff;
-    padding-top: 1.5rem;
+    font-size: 2rem;
 }
 
-.projects .box-container p{
-    font-size: 1.4rem;
-    color:#eee;
-    padding: 1rem 0;
+.projects p{
+    color:#fff;
+    font-size: 1.5rem;
+}
+/* container and cards */
+.projects .container {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    cursor: grab;
+    /* border-top: 10px solid #f00; */
+}
+
+.projects .cards {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 300px);
+    grid-gap: 50px;
+    pointer-events: none;
+    height: 100%;
+    /* border-bottom: 10px solid #00f; */
+}
+
+.projects .card {
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 5px 20px 0px rgba(69, 67, 96, 0.1);
+}
+
+.projects .card__content {
+    color: #4e4e4e;
+    padding: 1rem;
+}
+
+.projects  .button{
+    border: none;
+    font-size: 16px;
+    color: #FFF;
+    padding: 8px 16px;
+    background-color: #4070F4;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+projects  .button:hover{
+    cursor: pointer;
+    background: #265DF2;
+}
+
+.projects  .swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+}
+.projects  .swiper-pagination-bullet-active{
+    background-color: #4070F4;
+}
+
+.projects .swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+.projects .swiper-navBtn:hover{
+    color: #4070F4;
+}
+.projects .swiper-navBtn::before,
+.swiper-navBtn::after{
+    font-size: 35px;
+}
+.projects .swiper-button-next{
+    right: 0;
+}
+.projects .swiper-button-prev{
+    left: 0;
 }
 
 /*.projects .btn-64,*/
