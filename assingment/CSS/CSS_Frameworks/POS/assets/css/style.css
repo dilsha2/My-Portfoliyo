@@ -1,0 +1,21 @@
+body{
+    overflow-x: hidden;
+}
+
+#Home{
+    position: relative;
+    width: 100%;
+    height: 891px;
+    background-image: url("../images/Pos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#black_home{
+    position: relative;
+    width: 100%;
+    height: 891px;
+    background-color: black;
+    opacity: 30%;
+}
