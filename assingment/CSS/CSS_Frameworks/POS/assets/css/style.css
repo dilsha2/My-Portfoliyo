@@ -19,3 +19,22 @@ body{
     background-color: black;
     opacity: 30%;
 }
+
+#homeText{
+    position: absolute;
+    color: white;
+    font-family: 'Supermercado One', cursive;
+    font-size: 221px;
+    text-shadow: 8px 4px 4px black;
+    left: 28%;
+    top: 22%;
+}
+#Item_Section{
+    display: none;
+}
+#Customer_Section{
+    display: none;
+}
+#Order{
+    display: none;
+}
