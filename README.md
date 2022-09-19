@@ -15,7 +15,7 @@ Crated My Personal Portfolio
 🌱 Moke-Up-URL ---> [Click Me!]
 
 ## Basic Background of PortFolio
-<img src="assets/Readme/myportfolio.jpg">
+<img src="assets/readme/myportfolio.jpg">
 
 ## Technology /framework used
 * HTML
