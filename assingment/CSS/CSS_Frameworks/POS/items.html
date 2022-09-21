@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item | POS System v0.1.1</title>
+    <link href="assets/Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/others.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body>
+<section class="position-relative vw-100 vh-100 d-flex flex-column">
+    <nav class="navbar navbar-expand-lg navbar-light shadow-lg posNavi position-relative rounded-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand active text-light" href="#">
+                POS System v0.1.1
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 naviItems">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active text-light" href="homePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="items.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" href="placeOrder.html">Place Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container d-flex flex-grow-1 flex-column" style="background-color: #6f42c1">
+        <div class="position-relative d-inline-block mt-3 mt-lg-4 mt-md-4">
+            <h2 id="H1-2">Item Form</h2>
+        </div>
+        <div class="row justify-content-around" style="height: max-content">
+            <div class="col-10 col-md-5 col-lg-5 p-0" style="background-color: white">
+                <h3 class="text-center bg-success p-2 text-light">Search Item</h3>
+                <form>
+                    <div class="mb-3 ms-3 me-3">
+                        <input class="form-control" id="itemCode"
+                               placeholder="Input Item Code"
+                               type="text">
+                    </div>
+                    <button class="btn btn-success ms-3 mb-3 ms-md-3 ms-lg-3" type="submit">Search</button>
+                    <button class="btn btn-danger ms-3 mb-3 ms-md-3 ms-lg-3" type="reset">Clear</button>
+                </form>
+            </div>
+            <div class="col-10 col-md-5 col-lg-5 mt-2">
+                <button class="btn btn-primary position-relative m-2" data-bs-target="#addItem"
+                        data-bs-toggle="modal">Add Item</button>
+                <button class="btn btn-warning position-relative m-2">View All Items</button>
+                <button class="btn btn-success position-relative m-2" data-bs-target="#updateItem"
+                        data-bs-toggle="modal">Update Item</button>
+                <button class="btn btn-danger position-relative m-2" data-bs-target="#deleteItem"
+                        data-bs-toggle="modal">Delete Item</button>
+            </div>
+        </div>
+        <div class="row mt-1 mt-md-2 mt-lg-5 justify-content-around">
+            <div class="col-10">
+                <h3 class="text-center bg-success p-2 text-light mb-0">Item Details</h3>
+                <div class="itemTableDiv">
+                <table class="table bg-light table-bordered w-100 h-100 table-hover">
+                    <thead class="bg-primary text-light text-center">
+                    <tr>
+                        <th>Code</th>
+                        <th>Name</th>
+                        <th>Unit Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody id="itemTable">
+
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal Add Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="addItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Add Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtIcode">Code :</label>
+                        <input class="form-control" id="txtIcode"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemName">Name :</label>
+                        <input class="form-control" id="txtItemName"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemUnitPrice">Unit Price :</label>
+                        <input class="form-control" id="txtItemUnitPrice"
+                               type="number">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="txtItemQty">Quantity :</label>
+                        <input class="form-control" id="txtItemQty"
+                               type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" id="btnAddItem">Save</button>
+                <button class="btn btn-danger" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Update Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="updateItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  bg-success">
+                <h5 class="modal-title text-light">Update Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchItemCode">Search Code :</label>
+                        <input class="form-control" id="searchItemCode"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="name">Name:</label>
+                        <input class="form-control" id="name"
+                               type="text">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="unitPrice">Unit Price :</label>
+                        <input class="form-control" id="unitPrice"
+                               type="number">
+                    </div>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="qty">Qty :</label>
+                        <input class="form-control" id="qty"
+                               type="number">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" data-bs-dismiss="modal">Update</button>
+                <button class="btn btn-danger" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Delete Item -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="deleteItem" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-success">
+                <h5 class="modal-title text-light">Delete Item</h5>
+                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="ms-3 me-3">
+                        <label class="form-label fw-bold mb-0" for="searchIcode">Search Code :</label>
+                        <input class="form-control" id="searchIcode"
+                               type="text">
+                    </div>
+                    <fieldset disabled>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledName">Name :</label>
+                            <input class="form-control" id="disabledName"
+                                   type="text">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledAddress">Unit Price :</label>
+                            <input class="form-control" id="disabledAddress"
+                                   type="number">
+                        </div>
+                        <div class="ms-3 me-3">
+                            <label class="form-label fw-bold mb-0" for="disabledSalary">Quantity :</label>
+                            <input class="form-control" id="disabledSalary"
+                                   type="number">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="submit" data-bs-dismiss="modal" data-bs-target="#confirmation"
+                        data-bs-toggle="modal">Delete</button>
+                <button class="btn btn-secondary" type="reset">Clear</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Modal delete confirmation massage-->
+<div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation Alert</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure whether you want to delete this item?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-danger" type="submit" data-bs-dismiss="modal">Yes</button>
+                <button class="btn btn-secondary" data-bs-dismiss="modal" type="reset">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/Bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,40 +1,38 @@
-body{
-    overflow-x: hidden;
+.homePageSection{
+    width: 100vw;
+    height: 100vh;
 }
-
-#Home{
+.posNavi{
+    z-index: 5;
+    width: 100vw;
+    background: black;
+}
+.naviItems>li:hover{
+    background-color: red;
+}
+.searchCustomer{
+    background-color: #c8c8c8;
+}
+.btnRegister{
+    right: 30%;
+}
+.btnViewAllCustomers{
+    right: 0%;
+}
+.itemTableDiv{
     position: relative;
-    width: 100%;
-    height: 891px;
-    background-image: url("../images/Pos.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
 }
-
-#black_home{
+.customeTableDiv{
     position: relative;
-    width: 100%;
-    height: 891px;
-    background-color: black;
-    opacity: 30%;
+    height: 30vh;
+    overflow: auto;
+    background-color: white;
 }
-
-#homeText{
-    position: absolute;
-    color: white;
-    font-family: 'Supermercado One', cursive;
-    font-size: 221px;
-    text-shadow: 8px 4px 4px black;
-    left: 28%;
-    top: 22%;
-}
-#Item_Section{
-    display: none;
-}
-#Customer_Section{
-    display: none;
-}
-#Order{
-    display: none;
+.cartTbleDiv{
+    position: relative;
+    height: 20vh;
+    overflow: auto;
 }
