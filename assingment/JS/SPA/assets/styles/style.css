@@ -1,0 +1,62 @@
+.posNavi{
+    z-index: 5;
+    width: 100%;
+    background: black;
+}
+.naviItems>li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.customerPageNavi:hover{
+    cursor: pointer;
+}
+.itemPageNavi:hover{
+    cursor: pointer;
+}
+.placeOrderPageNavi:hover{
+    cursor: pointer;
+}
+.searchCustomer{
+    background-color: #c8c8c8;
+}
+.btnRegister{
+    right: 30%;
+}
+.btnViewAllCustomers{
+    right: 0%;
+}
+.itemTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    /*background-color: white;*/
+}
+.customeTableDiv{
+    position: relative;
+    height: 30vh;
+    overflow: auto;
+    /*background-color: white;*/
+}
+.cartTbleDiv{
+    position: relative;
+    height: 20vh;
+    overflow: auto;
+}
+.searchOrderContent{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 75vw;
+    height: max-content;
+}
+.searchOrderBody{
+    width: 75vw;
+    height: 85vh;
+}
+.orderTableDiv{
+    height: 20vh;
+    overflow: auto;
+}
