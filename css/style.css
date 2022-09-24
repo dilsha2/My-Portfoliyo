@@ -188,6 +188,10 @@ header .navbar ul li a:hover{
     text-align: center;
 }
 
+.home h2{
+    font-size: 2rem;
+    color: #001e7d;
+}
 /*========================================================================================*/
 
 .about .row{
