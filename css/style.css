@@ -380,6 +380,13 @@ header .navbar ul li a:hover{
     padding:1rem 0;
     font-weight: normal;
 }
+
+.projects h3{
+    font-size: 2rem;
+    color: mediumpurple;
+    padding:1rem 0;
+    font-weight: normal;
+}
 /*========================================================================================*/
 
 
