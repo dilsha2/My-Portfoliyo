@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #3b3f48;
+}
+
+.calculator{
+    width: 370px;
+    background: #3b3f48;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1rem;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px #17181c,
+                -3px -3px 3px #676e7e;
+
+}
+
+.output{
+    font-size: 3.4rem;
+    text-align: right;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    display: block;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    box-shadow: inset 3px 3px 3px #17181c,
+                -3px -3px 3px #676e7e;
+}
