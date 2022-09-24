@@ -373,6 +373,13 @@ header .navbar ul li a:hover{
     cursor: pointer;
     background: #265DF2;
 }
+
+.projects h1{
+    font-size: 2rem;
+    color: white;
+    padding:1rem 0;
+    font-weight: normal;
+}
 /*========================================================================================*/
 
 
