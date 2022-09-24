@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="styles/cal.css">
 </head>
 <body>
+<div class="calculator">
+<input type="text" id="result" class="output" placeholder="0">
+    <div class="keys">
+        <input type="button" value="+" class="key key-op" onclick="display('+')">
+        <input type="button" value="-" class="key key-op" onclick="display('-')">
+        <input type="button" value="&times" class="key key-op" onclick="display('*')">
+        <input type="button" value="/" class="key key-op" onclick="display('/')">
+        <input type="button" value="7" class="key key-op" onclick="display('7')">
+        <input type="button" value="8" class="key key-op" onclick="display('8')">
+        <input type="button" value="9" class="key key-op" onclick="display('9')">
+        <input type="button" value="4" class="key key-op" onclick="display('4')">
+        <input type="button" value="5" class="key key-op" onclick="display('5')">
+        <input type="button" value="6" class="key key-op" onclick="display('6')">
+        <input type="button" value="1" class="key key-op" onclick="display('1')">
+        <input type="button" value="2" class="key key-op" onclick="display('2')">
+        <input type="button" value="3" class="key key-op" onclick="display('3')">
+    </div>
+</div>
 
 </body>
 </html>
