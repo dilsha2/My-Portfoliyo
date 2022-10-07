@@ -12,7 +12,9 @@ Crated My Personal Portfolio
 * My Educational Background
 * My contact details
 
-🌱 Moke-Up-URL ---> [Click Me!]
+🌱 Moke-Up-URL ---> [Click Me!](https://www.figma.com/file/yaKKZmS8nzmqQJTw7KlVRn/My-Personal-portfolio)<br>
+🌱 Wire-Frame-URL ---> [Click Me!](https://wireframe.cc/2J20l9)<br>
+🌱 Site-Map-URL ---> [Click Me!](https://www.gloomaps.com/nFvNK6T6sJ)<br>
 
 ## Basic Background of PortFolio
 <img src="assets/readme/myportfolio.jpg">
