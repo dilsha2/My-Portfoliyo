@@ -1,7 +1,7 @@
 # My-Portfoliyo
 Crated My Personal Portfolio
 
-## Technologies and Frameworks
+## Technologies and Frameworks used
 
 * HTML
 * CSS
@@ -29,7 +29,3 @@ Crated My Personal Portfolio
 ## Basic Background of PortFolio
 <img src="assets/readme/myportfolio.jpg">
 
-## Technology /framework used
-* HTML
-* CSS
-* Java Script
