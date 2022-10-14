@@ -1,6 +1,12 @@
 # My-Portfoliyo
 Crated My Personal Portfolio
 
+## Technologies and Frameworks
+
+* HTML
+* CSS
+* JAVASCRIPT
+
 ## Description
 
 * Home page
