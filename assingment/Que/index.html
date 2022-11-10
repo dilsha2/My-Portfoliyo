@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer-1{
+            height: 200px;
+            border: 1px solid red;
+        }
+
+        .grid-1{
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid-1>div{
+            width: 200px;
+            height: 100%;
+            border: 1px solid fuchsia;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <input placeholder="Name" id="inp-name">
+    <select id="sel-colors">
+        <option>Green</option>
+        <option>Red</option>
+        <option>Orange</option>
+        <option>Black</option>
+        <option>Yellow</option>
+    </select>
+    <button type="button" id="add-btn">Add to que</button>
+</form>
+<section class="outer-1">
+    <section class="grid-1">
+    </section>
+</section>
+<script src="jquery-3.6.0.min.js"></script>
+<script src="que.js"></script>
+</body>
+</html>
