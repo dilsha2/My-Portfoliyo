@@ -1,0 +1,115 @@
+@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
+
+h1{
+    font-family: arial;
+    font-size: 30px;
+    margin: 35px 0;
+    text-align: center;
+}
+
+div[id*=cell-]{
+    padding: 0px;
+    margin: 0px;
+    height: 65px;
+    width: 65px;
+}
+
+div[id*=cell-black-]{
+    background-color: #a2703f;
+}
+
+div[id*=cell-white-]{
+    background-color: #f3cf93;
+}
+
+div[id*=row-]{
+    height: 65px;
+}
+
+span[id*=p-]{
+    width: 65px;
+    height: 65px;
+    margin-left: 8px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.color-path{
+    border: 2px solid #7c8bc4;
+    background-color: rgba(0, 255, 0, 0.4) !important;
+}
+
+#sub-container{
+    position: absolute;
+    top: 6px;
+    left: 21px;
+    width: 522px;
+    height: 522px;
+
+
+}
+
+#border-container{
+    position: absolute;
+    width: 532px;
+    height: 532px;
+    top: 200px;
+    left: 170px;
+    background-color: red;
+}
+
+#board-container{
+    position: absolute;
+    width: 950px;
+    height: 850px;
+    background-color: transparent;
+    left: 230px;
+    top: 90px;
+    perspective: 1000px;
+}
+
+#button-container{
+    position: absolute;
+    width: 280px;
+    height: 610px;
+    left: 1200px;
+    top: 220px;
+    background-color: #333333;
+}
+
+#logo-name{
+    height: 60px;
+    background-color: #563D7C;
+    border-bottom-style: ridge;
+    border-bottom-color: white;
+    border-bottom-width: thin;
+    border-image:linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
+}
+
+#sub-button-container{
+    position: absolute;
+    width: 270px;
+    height: 540px;
+    top: 65px;
+    left: 5px;
+}
+
+#player-01-container{
+    position: absolute;
+    width: 270px;
+    height: 50px;
+    /* color: yellow;*/
+    text-align: left;
+    font-size: 25px;
+}
+
+#player-02-container{
+    position: absolute;
+    width: 270px;
+    height: 50px;
+    top: 120px;
+    /*color: yellow;*/
+    text-align: left;
+    font-size: 25px;
+}
