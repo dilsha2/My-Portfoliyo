@@ -12,6 +12,22 @@
     <div id="button-container">
         <div id="logo-name"></div>
         <div id="sub-button-container">
+            <div style="position: absolute; top: 20px" class="input-group">
+                <span class="input-group-addon" id="basic-addon1">Player 01</span>
+                <input id="p01_typing" text="text" class="form-control" placeholder="userName" aria-describedby="basic-addon1">
+            </div>
+
+            <div style="position: absolute; top: 80px" class="inout-group">
+                <span class="input-group-addon" id="basic-addon2">Player 02</span>
+                <input id="p02_typing" text="text" class="form-control" placeholder="userName" aria-describedby="basic-addon1">
+            </div>
+
+
+            <div style="position: absolute;left: 45px;top: 150px"><button type="button" class="btn btn-primary btn-lg" >&nbsp;&nbsp;&nbsp;&nbsp; New Game &nbsp;&nbsp;&nbsp;&nbsp; </button></div>
+            <div style="position: absolute;left: 45px;top: 220px"><button onclick="change_to_3d()" type="button" class="btn btn-primary btn-lg" >&nbsp;&nbsp;&nbsp;&nbsp; 3D Style &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button></div>
+            <div style="position: absolute;left: 45px;top: 290px"><button onclick="change_to_2d()" type="button" class="btn btn-primary btn-lg" >&nbsp;&nbsp;&nbsp;&nbsp; 2D Style &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button></div>
+            <div style="position: absolute;text-align: center;left: 40px;top: 360px"><button onclick="rotate_to_black()" type="button" class="btn btn-primary btn-lg" > Rotate to BLACK&nbsp;&nbsp;&nbsp;&nbsp; </button></div>
+            <div style="position: absolute;text-align: center;left: 40px;top: 430px"><button onclick="rotate_to_white()" type="button" class="btn btn-primary btn-lg" > Rotate to WHITE&nbsp;&nbsp;&nbsp;&nbsp; </button></div>
 
         </div>
     </div>
