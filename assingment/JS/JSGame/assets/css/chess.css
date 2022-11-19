@@ -208,3 +208,49 @@ hr{
     width: 350px;
     top: 40px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background: #1d1d1d;
+    border-top: 1px solid #ddd;
+    border-image: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
+}
+
+#all-right-reserved{
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    top: 10px;
+    left: 40%;
+}
