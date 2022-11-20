@@ -22,8 +22,8 @@
     border-image: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
 }
 
-h1{
-    font-family: arial;
+h1 {
+    font-family: Arial;
     font-size: 30px;
     margin: 35px 0;
     text-align: center;
@@ -35,13 +35,13 @@ div[id*=cell-]{
     height: 65px;
     width: 65px;
 }
-
 div[id*=cell-black-]{
-    background-color: #a2703f;
+    background-color:#a2703f ;
 }
 
 div[id*=cell-white-]{
-    background-color: #f3cf93;
+    background-color:#f3cf93 ;
+
 }
 
 div[id*=row-]{
@@ -107,7 +107,6 @@ span[id*=p-]{
     border-bottom-color: white;
     border-bottom-width: thin;
     border-image:linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
-
 }
 
 #sub-button-container{
@@ -136,6 +135,8 @@ span[id*=p-]{
     text-align: left;
     font-size: 25px;
 }
+
+
 .avatar-container{
     position: absolute;
     width: 850px;
@@ -163,9 +164,9 @@ span[id*=p-]{
 
 .players-avatar-container{
     position: absolute;
-    width: 65px;
+    width:65px;
     height: 65px;
-    border: solid rgba(255,255,255,0) .5px;
+    border:  solid rgba(255,255,255,0) .5px;
     box-shadow: inset 0 0 32px rgba(0,5,20,.5);
     background-size: contain;
     background-position: center;
@@ -177,7 +178,7 @@ span[id*=p-]{
     width: 300px;
     height: 35px;
     color: #a0999b;
-    font-family: 'Bree Serif',serif;
+    font-family: 'Bree Serif', serif;
     font-size: 25px;
 }
 
@@ -186,6 +187,7 @@ label[id*=lbl_player-]{
     width: 300px;
     height: 50px;
     text-align: left;
+    /*color: yellow;*/
 }
 
 #lbl_player-02{
@@ -208,7 +210,6 @@ hr{
     width: 350px;
     top: 40px;
 }
-
 
 
 
