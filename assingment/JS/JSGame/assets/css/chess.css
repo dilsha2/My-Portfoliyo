@@ -1,6 +1,6 @@
 @import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
 
-#main-container{
+#main-container {
     position: absolute;
     position: fixed;
     top: 0px;
@@ -10,7 +10,7 @@
     background-color: #222222;
 }
 
-#navigation-bar{
+#navigation-bar {
     position: absolute;
     width: 100%;
     height: 60px;
@@ -19,7 +19,7 @@
     border-bottom-style: ridge;
     border-bottom-color: white;
     border-bottom-width: thin;
-    border-image: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 33%, rgba(255, 255, 255, .3) 66%, rgba(255, 255, 255, 0) 100%) 1 stretch;
 }
 
 h1 {
@@ -29,7 +29,6 @@ h1 {
     text-align: center;
 }
 
-@import "https://fonts.googleapis.com/css?family=Rancho&effect=fire-animation";
 
 h1 {
     font-family: Arial;
@@ -38,26 +37,27 @@ h1 {
     text-align: center;
 }
 
-div[id*=cell-]{
+div[id*=cell-] {
     padding: 0px;
     margin: 0px;
     height: 65px;
     width: 65px;
 }
-div[id*=cell-black-]{
-    background-color:#a2703f ;
+
+div[id*=cell-black-] {
+    background-color: #a2703f;
 }
 
-div[id*=cell-white-]{
-    background-color:#f3cf93 ;
+div[id*=cell-white-] {
+    background-color: #f3cf93;
 
 }
 
-div[id*=row-]{
+div[id*=row-] {
     height: 65px;
 }
 
-span[id*=p-]{
+span[id*=p-] {
     width: 65px;
     height: 65px;
     margin-left: 8px;
@@ -66,12 +66,12 @@ span[id*=p-]{
     cursor: pointer;
 }
 
-.color-path{
+.color-path {
     border: 2px solid #7c8bc4;
     background-color: rgba(0, 255, 0, 0.4) !important;
 }
 
-#sub-container{
+#sub-container {
     position: absolute;
     top: 6px;
     left: 21px;
@@ -81,7 +81,7 @@ span[id*=p-]{
 
 }
 
-#border-container{
+#border-container {
     position: absolute;
     width: 532px;
     height: 532px;
@@ -90,7 +90,7 @@ span[id*=p-]{
     background-color: red;
 }
 
-#board-container{
+#board-container {
     position: absolute;
     width: 950px;
     height: 850px;
@@ -100,7 +100,7 @@ span[id*=p-]{
     perspective: 1000px;
 }
 
-#button-container{
+#button-container {
     position: absolute;
     width: 280px;
     height: 610px;
@@ -109,16 +109,16 @@ span[id*=p-]{
     background-color: #333333;
 }
 
-#logo-name{
+#logo-name {
     height: 60px;
     background-color: #563D7C;
     border-bottom-style: ridge;
     border-bottom-color: white;
     border-bottom-width: thin;
-    border-image:linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 33%, rgba(255, 255, 255, .3) 66%, rgba(255, 255, 255, 0) 100%) 1 stretch;
 }
 
-#sub-button-container{
+#sub-button-container {
     position: absolute;
     width: 270px;
     height: 540px;
@@ -126,7 +126,7 @@ span[id*=p-]{
     left: 5px;
 }
 
-#player-01-container{
+#player-01-container {
     position: absolute;
     width: 270px;
     height: 50px;
@@ -135,7 +135,7 @@ span[id*=p-]{
     font-size: 25px;
 }
 
-#player-02-container{
+#player-02-container {
     position: absolute;
     width: 270px;
     height: 50px;
@@ -146,7 +146,7 @@ span[id*=p-]{
 }
 
 
-.avatar-container{
+.avatar-container {
     position: absolute;
     width: 850px;
     height: 100px;
@@ -155,7 +155,7 @@ span[id*=p-]{
     background-color: transparent;
 }
 
-.players{
+.players {
     position: absolute;
     width: 425px;
     height: 80px;
@@ -163,26 +163,26 @@ span[id*=p-]{
     background-color: transparent;
 }
 
-#player-01{
+#player-01 {
     left: 10px;
 }
 
-#player-02{
+#player-02 {
     right: 10px;
 }
 
-.players-avatar-container{
+.players-avatar-container {
     position: absolute;
-    width:65px;
+    width: 65px;
     height: 65px;
-    border:  solid rgba(255,255,255,0) .5px;
-    box-shadow: inset 0 0 32px rgba(0,5,20,.5);
+    border: solid rgba(255, 255, 255, 0) .5px;
+    box-shadow: inset 0 0 32px rgba(0, 5, 20, .5);
     background-size: contain;
     background-position: center;
     background-color: #6c81a9;
 }
 
-.players-name{
+.players-name {
     position: absolute;
     width: 300px;
     height: 35px;
@@ -191,7 +191,7 @@ span[id*=p-]{
     font-size: 25px;
 }
 
-label[id*=lbl_player-]{
+label[id*=lbl_player-] {
     position: absolute;
     width: 300px;
     height: 50px;
@@ -199,55 +199,55 @@ label[id*=lbl_player-]{
     /*color: yellow;*/
 }
 
-#lbl_player-02{
+#lbl_player-02 {
     text-align: right;
     right: 0px;
 }
 
-#player-01-name{
+#player-01-name {
     left: 75px;
     text-align: left;
 }
 
-#player-02-name{
+#player-02-name {
     right: 75px;
     text-align: right;
 }
 
-hr{
+hr {
     position: absolute;
     width: 350px;
     top: 40px;
 }
 
-#hr1{
+#hr1 {
     left: 75px;
-    border-image:linear-gradient(to right,rgba(255,255,255,.3) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,0) 100%) 1 stretch;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, .3) 0, rgba(255, 255, 255, .3) 33%, rgba(255, 255, 255, .3) 66%, rgba(255, 255, 255, 0) 100%) 1 stretch;
 }
 
-#hr2{
+#hr2 {
     right: 75px;
-    border-image:linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 33%,rgba(255,255,255,.3) 66%,rgba(255,255,255,.3) 100%) 1 stretch;
+    border-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, .3) 33%, rgba(255, 255, 255, .3) 66%, rgba(255, 255, 255, .3) 100%) 1 stretch;
 }
 
-#p02ac{
+#p02ac {
     right: 0px;
 }
 
-.players-avatar{
+.players-avatar {
     position: absolute;
-    width:65px;
+    width: 65px;
     height: 65px;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAADFBMVEVMaXEAAAAJCQkyMjJnzcPAAAAABHRSTlMAYObP+Lsm8QAAANtJREFUeNrFl9Fqw1AMxWLp//95D2VmDG7IzqGr3qUa1yHkejPzItf9JtJZmFT3BRP5LhD4/gTmj76/ACtfgcxPFgFWhcEDDzfpOeCjAJ6AMiDdCqQO2AamC0D/L5YT+PFDnHYC5r8OqTsE2wCewTKg3QokCEQ76G7Z/nGm8m8KlG8mvZ7iewJYvl2ZqxoBrucM4QBLOsAyhAMsZaCfALvAED0Ii5wnKA7R6QJiG5hPB3Se6a6f7HEEz7CNs46aJla/BZj7X48Sq2eJYfUkMWtHiVDfTznWDwtgxRd3vhQHF/u3tAAAAABJRU5ErkJggg==);
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#player-01-avatar{
+#player-01-avatar {
     left: 0px;
 }
 
-#player-02-avatar{
+#player-02-avatar {
     right: 0px;
 }
 
