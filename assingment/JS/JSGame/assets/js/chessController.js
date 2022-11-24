@@ -45,7 +45,8 @@ $(document).on("click", function (event) {
         calculatePos(id);
         killOppositePiece(selectedPiece, clickedElement);
 
-    }console.log(clickedElement);
+    }
+    console.log(clickedElement);
     console.log(id);
 });
 
