@@ -1,8 +1,4 @@
-/**
- *
- King Factory
- */
-
+//king
 function createNewWhiteKing(pieceId, cellID) {
     if (whiteKing === null) {
         whiteKing = new Piece(pieceId, "white", cellID);
@@ -17,11 +13,8 @@ function createNewBlackKing(pieceId, cellID) {
     return blackKing;
 }
 
-/**
- *
- Queen Factory
- */
 
+//queen
 function createNewWhiteQueen(pieceId, cellID) {
     if (whiteQueen === null) {
         whiteQueen = new Piece(pieceId, "white", cellID);
@@ -36,11 +29,8 @@ function createNewBlackQueen(pieceId, cellID) {
     return blackQueen;
 }
 
-/**
- *
- Castle Factory
- */
 
+//castle
 function createNewWhiteCastle(pieceId, cellID) {
     for (var i = 0; i < arrMovedWhiteCastleList.length; i++) {
         var castle = arrMovedWhiteCastleList[i];
@@ -70,10 +60,7 @@ function createNewBlackCastle(pieceId, cellID) {
 }
 
 
-/**
- *
- Bishop Factory
- */
+//bishop
 function createNewBlackBishop(pieceId, cellID) {
 
     for (var i = 0; i < arrMovedBlackBishopList.length; i++) {
@@ -104,11 +91,7 @@ function createNewWhiteBishop(pieceId, cellID) {
     return bishop;
 }
 
-/**
- *
- Pawn Factory
- */
-
+pawn
 function createNewBlackPawn(pieceId, cellID) {
     for (var i = 0; i < arrMovedBlackPawnList.length; i++) {
         var pawn = arrMovedBlackPawnList[i];
@@ -133,11 +116,7 @@ function createNewWhitePawn(pieceId, cellID) {
     return pawn;
 }
 
-/**
- *
- Knight Factory
- */
-
+//knight
 function createNewBlackKnight(pieceId, cellID) {
     for (var i = 0; i < arrMovedBlackKnightList.length; i++) {
         var knight = arrMovedBlackKnightList[i];
