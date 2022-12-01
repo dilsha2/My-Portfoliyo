@@ -92,6 +92,7 @@ function createNewWhiteBishop(pieceId, cellID) {
 }
 
 pawn
+
 function createNewBlackPawn(pieceId, cellID) {
     for (var i = 0; i < arrMovedBlackPawnList.length; i++) {
         var pawn = arrMovedBlackPawnList[i];
